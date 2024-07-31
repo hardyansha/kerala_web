@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerala Tourism</title>
+  <link rel="stylesheet" href="path-to-your-css-file.css"> <!-- Add your CSS file path here -->
+  <style>
+    /* Inline CSS for basic styling */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .min-h-screen {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      background-color: #f8f9fa;
+    }
+    header a img {
+      height: 24px;
+      width: 24px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li, nav ul a {
+      margin: 0 0.5rem;
+    }
+    nav ul a {
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      color: #333;
+      border-radius: 4px;
+    }
+    nav ul a:hover {
+      background-color: #007bff;
+      color: white;
+    }
+    .main-content {
+      flex: 1;
+    }
+    .section {
+      padding: 2rem;
+    }
+    .section h1, .section p, .section a {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    .section img {
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+    }
+    .card h3, .card p {
+      margin: 0.5rem;
+    }
+    footer {
+      padding: 1rem;
+      text-align: center;
+      border-top: 1px solid #ddd;
+    }
+    footer nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    footer nav a {
+      color: #333;
+      text-decoration: none;
+    }
+    footer nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="min-h-screen">
+    <header>
+      <a href="#" rel="ugc">
+        <img src="kerela.jpg" alt="Kerala Tourism" />
+        <span class="sr-only">Kerala Tourism</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#" rel="ugc">Home</a></li>
+          <li><a href="#" rel="ugc">Explore</a></li>
+          <li><a href="#" rel="ugc">Plan Your Trip</a></li>
+          <li><a href="#" rel="ugc">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="section">
+        <img src="kerela.jpg" alt="Kerala Backwaters" class="object-cover" />
+        <div>
+          <h1>Discover the Beauty of Kerala</h1>
+          <p>Explore the serene backwaters, vibrant culture, and rich culinary heritage of God's Own Country.</p>
+          <a href="#" rel="ugc">Explore Kerala</a>
+        </div>
+      </section>
+      <section class="section">
+        <div class="grid">
+          <div class="card">
+            <img src="kerela.jpg" alt="Kerala Backwaters" />
+            <div>
+              <h3>Backwaters</h3>
+              <p>Explore the serene and picturesque backwaters of Kerala, a network of canals, rivers, and lakes.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="kerela.jpg" alt="Kerala Temples" />
+            <div>
+              <h3>Temples</h3>
+              <p>Discover the rich cultural heritage of Kerala's ancient temples, known for their intricate architecture and vibrant festivals.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="kerela.jpg" alt="Kerala Cuisine" />
+            <div>
+              <h3>Cuisine</h3>
+              <p>Indulge in the flavorful and aromatic cuisine of Kerala, known for its use of spices, coconut, and seafood.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="kerela.jpg" alt="Kerala Wildlife" />
+            <div>
+              <h3>Wildlife</h3>
+              <p>Discover the diverse and unique wildlife of Kerala, including elephants, tigers, and a variety of bird species.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2024 Kerala Tourism. All rights reserved.</p>
+      <nav>
+        <a href="#" rel="ugc">Terms of Service</a>
+        <a href="#" rel="ugc">Privacy</a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
